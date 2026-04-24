@@ -67,7 +67,6 @@
     transition: background 0.6s, color 0.4s;
   }
 
-  /* BG */
   .bg-canvas { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
   .bg-canvas::before {
     content: ''; position: absolute; inset: 0;
@@ -82,7 +81,6 @@
   .bg-canvas::after { content: ''; position: absolute; inset: 0; background: var(--noise); opacity: 1; }
   @keyframes bgPulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1.02); } }
 
-  /* TOPBAR */
   .topbar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     height: 58px; display: flex; align-items: center; justify-content: space-between;
@@ -93,11 +91,11 @@
   }
   .topbar-left { display: flex; align-items: center; gap: 10px; }
   .topbar-back {
-    display: flex; align-items: center; gap: 8px; text-decoration: none;
+    display: flex; align-items: center; gap: 7px; text-decoration: none;
     color: var(--text-secondary); font-size: 13px; font-weight: 600; letter-spacing: 0.2px;
     padding: 6px 12px; border-radius: 10px; border: 1px solid var(--glass-border);
     background: var(--btn-bg); backdrop-filter: blur(12px);
-    transition: all 0.25s; gap: 7px;
+    transition: all 0.25s;
   }
   .topbar-back:hover { color: var(--accent); border-color: var(--accent); transform: translateX(-2px); }
   .topbar-back svg { transition: transform 0.25s; }
@@ -110,9 +108,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   }
   .topbar-wordmark { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 600; color: var(--text-primary); }
-  .topbar-right { display: flex; align-items: center; gap: 8px; }
 
-  /* Theme button */
   .theme-float {
     position: fixed; top: 10px; right: 16px; z-index: 200;
     width: 38px; height: 38px; border-radius: 12px;
@@ -147,11 +143,9 @@
   .swatch-forest   { background: linear-gradient(135deg,#40e890,#80ffb8,#20d070); }
   .swatch-obsidian { background: linear-gradient(135deg,#a070ff,#40b8ff,#d060ff); }
 
-  /* MAIN WRAP */
   .page-wrap { position: relative; z-index: 1; padding-top: 78px; padding-bottom: 80px; }
   .container { max-width: 700px; margin: 0 auto; padding: 0 16px; }
 
-  /* HERO */
   .hero {
     text-align: center; margin-bottom: 40px; padding: 40px 24px 36px;
     background: var(--glass-bg); border: 1px solid var(--glass-border);
@@ -177,7 +171,6 @@
   .hero-stat-lbl { font-size: 10px; font-weight: 600; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text-meta); }
   .hero-stat-divider { width: 1px; background: var(--glass-border); align-self: stretch; }
 
-  /* FILTER BAR */
   .filter-bar {
     display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px;
     animation: fadeUp 0.7s ease both 0.2s;
@@ -190,12 +183,10 @@
   }
   .filter-btn:hover, .filter-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 4px 14px var(--glass-shadow); }
 
-  /* SECTION HEADING */
   .section-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; margin-top: 36px; }
   .section-heading-line { flex: 1; height: 1px; background: linear-gradient(90deg, var(--glass-border), transparent); }
   .section-heading-text { font-size: 11px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: var(--text-meta); white-space: nowrap; }
 
-  /* PROJECT CARDS */
   .projects-list { display: flex; flex-direction: column; gap: 16px; }
   .proj-card {
     background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 26px;
@@ -213,17 +204,15 @@
   .proj-card[data-status="coming"] { opacity: 0.75; cursor: default; }
   .proj-card[data-status="coming"]:hover { transform: translateY(-3px); }
 
-  /* Card blob */
   .proj-blob { position: absolute; width: 200px; height: 200px; border-radius: 50%; filter: blur(55px); opacity: 0.3; pointer-events: none; right: -40px; bottom: -50px; transition: opacity 0.4s; }
   .proj-card:hover .proj-blob { opacity: 0.55; }
-  .blob-ai    { background: radial-gradient(circle, rgba(16,163,127,0.6), rgba(0,200,120,0.2)); }
-  .blob-web3  { background: radial-gradient(circle, rgba(255,140,40,0.6), rgba(255,60,80,0.2)); }
-  .blob-design{ background: radial-gradient(circle, rgba(120,80,255,0.6), rgba(40,160,255,0.2)); }
-  .blob-news  { background: radial-gradient(circle, rgba(0,180,255,0.6), rgba(80,80,255,0.2)); }
+  .blob-ai     { background: radial-gradient(circle, rgba(16,163,127,0.6), rgba(0,200,120,0.2)); }
+  .blob-web3   { background: radial-gradient(circle, rgba(255,140,40,0.6), rgba(255,60,80,0.2)); }
+  .blob-design { background: radial-gradient(circle, rgba(120,80,255,0.6), rgba(40,160,255,0.2)); }
+  .blob-news   { background: radial-gradient(circle, rgba(0,180,255,0.6), rgba(80,80,255,0.2)); }
   .blob-finance{ background: radial-gradient(circle, rgba(40,200,120,0.6), rgba(0,255,180,0.2)); }
-  .blob-future{ background: radial-gradient(circle, rgba(160,160,160,0.3), rgba(100,100,100,0.1)); }
+  .blob-bitcoin{ background: radial-gradient(circle, rgba(247,147,26,0.65), rgba(255,90,0,0.2)); }
 
-  /* Card top row */
   .proj-card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 16px; }
   .proj-icon { width: 52px; height: 52px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 24px; border: 1px solid var(--glass-border); background: var(--glass-bg); backdrop-filter: blur(12px); transition: transform 0.3s; }
   .proj-card:hover .proj-icon { transform: scale(1.1) rotate(-5deg); }
@@ -238,18 +227,20 @@
   .badge-beta    { color: #ff9f0a; border-color: rgba(255,159,10,0.35); background: rgba(255,159,10,0.1); }
   .badge-ai      { color: #10a37f; border-color: rgba(16,163,127,0.35); background: rgba(16,163,127,0.1); }
   .badge-web3    { color: #f97316; border-color: rgba(249,115,22,0.35); background: rgba(249,115,22,0.1); }
+  .badge-bitcoin { color: #f7931a; border-color: rgba(247,147,26,0.35); background: rgba(247,147,26,0.1); }
 
-  /* Card content */
   .proj-name { font-family: 'Playfair Display', serif; font-size: clamp(22px, 6vw, 28px); font-weight: 700; letter-spacing: -0.3px; line-height: 1.1; color: var(--text-primary); margin-bottom: 8px; transition: color 0.3s; }
   .proj-desc { font-size: 14px; line-height: 1.65; color: var(--text-secondary); margin-bottom: 18px; transition: color 0.4s; }
   .proj-footer { display: flex; align-items: center; justify-content: space-between; margin-top: auto; gap: 12px; }
   .proj-stack { display: flex; flex-wrap: wrap; gap: 6px; }
   .proj-pill { padding: 4px 11px; border-radius: 100px; background: var(--glass-bg); border: 1px solid var(--glass-border); font-size: 11px; font-weight: 600; letter-spacing: 0.6px; text-transform: uppercase; color: var(--text-secondary); transition: all 0.2s; }
   .proj-card:hover .proj-pill { border-color: var(--accent); color: var(--accent); }
+  /* Bitcoin card keeps orange on hover */
+  .proj-card--bitcoin:hover .proj-pill { border-color: #f7931a; color: #f7931a; }
   .proj-link-icon { width: 34px; height: 34px; border-radius: 11px; flex-shrink: 0; background: var(--glass-bg); border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--text-meta); transition: all 0.25s; }
   .proj-card:hover .proj-link-icon { background: var(--accent); color: #fff; border-color: var(--accent); transform: translate(3px,-3px); }
+  .proj-card--bitcoin:hover .proj-link-icon { background: #f7931a; border-color: #f7931a; }
 
-  /* COMING SOON CARD */
   .coming-card {
     background: var(--glass-bg); border: 1px dashed var(--glass-border); border-radius: 26px;
     backdrop-filter: blur(20px); padding: 28px 24px;
@@ -262,22 +253,19 @@
   .coming-pulse { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-left: auto; animation: pulseDot 2s ease-in-out infinite; }
   @keyframes pulseDot { 0%,100% { transform: scale(1); opacity: 0.6; } 50% { transform: scale(1.5); opacity: 1; } }
 
-  /* FOOTER */
   .page-footer { text-align: center; margin-top: 48px; font-size: 11.5px; color: var(--text-meta); }
   .page-footer a { color: var(--accent); text-decoration: none; font-weight: 500; }
   .page-footer a:hover { text-decoration: underline; }
 
-  /* ANIMATIONS */
   @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
-  /* Stagger project cards */
   .proj-card:nth-child(1) { animation-delay: 0.15s; }
   .proj-card:nth-child(2) { animation-delay: 0.25s; }
   .proj-card:nth-child(3) { animation-delay: 0.35s; }
   .proj-card:nth-child(4) { animation-delay: 0.45s; }
   .proj-card:nth-child(5) { animation-delay: 0.55s; }
+  .proj-card:nth-child(6) { animation-delay: 0.65s; }
 
-  /* Hidden class for filter */
   .proj-card.hidden, .coming-card.hidden { display: none; }
 
   @media (max-width: 480px) {
@@ -291,8 +279,6 @@
 
 <body data-theme="arctic">
 <div class="bg-canvas"></div>
-
-<!-- Theme button -->
 
 <button class="theme-float" id="themeTrigger" aria-label="Change theme" aria-expanded="false">
   <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8">
@@ -313,8 +299,6 @@
 <div class="page-wrap">
 <div class="container">
 
-  <!-- Topbar / back -->
-
   <div class="topbar">
     <div class="topbar-left">
       <a href="index.html" class="topbar-back" aria-label="Back to profile">
@@ -334,7 +318,7 @@
     <p class="hero-sub">A collection of everything I've built — from AI assistants and blockchain explorers to open-source design kits. Always shipping, always learning.</p>
     <div class="hero-stats">
       <div class="hero-stat">
-        <span class="hero-stat-val" id="live-count">4</span>
+        <span class="hero-stat-val">5</span>
         <span class="hero-stat-lbl">Live</span>
       </div>
       <div class="hero-stat-divider"></div>
@@ -360,7 +344,7 @@
     <button class="filter-btn" data-filter="finance">💰 Finance</button>
   </div>
 
-  <!-- ─────────── LIVE PROJECTS ─────────── -->
+  <!-- LIVE PROJECTS -->
 
   <div class="section-heading">
     <div class="section-heading-line"></div>
@@ -370,8 +354,8 @@
 
   <div class="projects-list" id="projects-list">
 
-
-<!-- PrashantGPT -->
+```
+<!-- 1. PrashantGPT -->
 <a href="https://gpt.prashantbhatt.net" target="_blank" rel="noopener" class="proj-card" data-tags="ai" data-status="live">
   <div class="proj-blob blob-ai"></div>
   <div class="proj-card-top">
@@ -395,7 +379,31 @@
   </div>
 </a>
 
-<!-- XPlorer -->
+<!-- 2. House of Bitcoin — NEW -->
+<a href="https://houseofbitcoin.app" target="_blank" rel="noopener" class="proj-card proj-card--bitcoin" data-tags="web3 finance" data-status="live">
+  <div class="proj-blob blob-bitcoin"></div>
+  <div class="proj-card-top">
+    <div class="proj-icon" style="border-color:rgba(247,147,26,0.4)">₿</div>
+    <div class="proj-badges">
+      <span class="proj-badge badge-live">● Live</span>
+      <span class="proj-badge badge-bitcoin">Bitcoin</span>
+    </div>
+  </div>
+  <div class="proj-name">House of Bitcoin</div>
+  <div class="proj-desc">A curated hub for Bitcoin education, on-chain insights, and the orange-pill philosophy — bridging traditional finance with the world of sound money. Built for curious minds ready to go down the rabbit hole.</div>
+  <div class="proj-footer">
+    <div class="proj-stack">
+      <span class="proj-pill">Bitcoin</span>
+      <span class="proj-pill">Web3</span>
+      <span class="proj-pill">Finance</span>
+    </div>
+    <div class="proj-link-icon">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </div>
+  </div>
+</a>
+
+<!-- 3. XPlorer -->
 <a href="https://xp.prashantbhatt.net" target="_blank" rel="noopener" class="proj-card" data-tags="web3" data-status="live">
   <div class="proj-blob blob-web3"></div>
   <div class="proj-card-top">
@@ -419,7 +427,7 @@
   </div>
 </a>
 
-<!-- Swipely -->
+<!-- 4. Swipely -->
 <a href="https://swipely.prashantbhatt.net" target="_blank" rel="noopener" class="proj-card" data-tags="ai" data-status="live">
   <div class="proj-blob blob-news"></div>
   <div class="proj-card-top">
@@ -443,7 +451,7 @@
   </div>
 </a>
 
-<!-- GlassUI Kit -->
+<!-- 5. GlassUI Kit -->
 <a href="#" target="_blank" rel="noopener" class="proj-card" data-tags="design" data-status="live">
   <div class="proj-blob blob-design"></div>
   <div class="proj-card-top">
@@ -467,7 +475,7 @@
   </div>
 </a>
 
-<!-- Solidity / pyethereum -->
+<!-- 6. pyethereum -->
 <a href="https://github.com/iprashantbhatt/pyethereum" target="_blank" rel="noopener" class="proj-card" data-tags="web3" data-status="live">
   <div class="proj-blob blob-web3"></div>
   <div class="proj-card-top">
@@ -490,11 +498,11 @@
     </div>
   </div>
 </a>
-
+```
 
   </div><!-- /projects-list -->
 
-  <!-- ─────────── COMING SOON ─────────── -->
+  <!-- COMING SOON -->
 
   <div class="section-heading" style="margin-top:40px">
     <div class="section-heading-line"></div>
@@ -504,7 +512,7 @@
 
   <div class="projects-list" id="coming-list">
 
-
+```
 <div class="proj-card" data-tags="finance" data-status="coming" style="cursor:default">
   <div class="proj-blob blob-finance"></div>
   <div class="proj-card-top">
@@ -564,11 +572,9 @@
     </div>
   </div>
 </div>
-
+```
 
   </div><!-- /coming-list -->
-
-  <!-- "More coming" placeholder -->
 
   <div class="coming-card" style="margin-top:16px">
     <div class="coming-icon">🛠️</div>
@@ -583,11 +589,10 @@
     Made with 🫧 liquid glass · <a href="index.html">← Back to Profile</a> · <a href="https://prashantbhatt.net" target="_blank" rel="noopener">prashantbhatt.net</a>
   </p>
 
-</div><!-- /container -->
-</div><!-- /page-wrap -->
+</div>
+</div>
 
 <script>
-  /* ── Theme switcher ── */
   const trigger = document.getElementById('themeTrigger');
   const panel   = document.getElementById('themePanel');
   const options = document.querySelectorAll('.theme-option');
@@ -605,6 +610,7 @@
   options.forEach(btn => {
     btn.addEventListener('click', () => {
       document.body.setAttribute('data-theme', btn.dataset.themeVal);
+      localStorage.setItem('pb-theme', btn.dataset.themeVal);
       options.forEach(o => o.classList.remove('active'));
       btn.classList.add('active');
       setTimeout(() => { panel.classList.remove('open'); trigger.setAttribute('aria-expanded', false); }, 280);
@@ -614,21 +620,13 @@
     if (e.key === 'Escape') { panel.classList.remove('open'); trigger.setAttribute('aria-expanded', false); }
   });
 
-  /* ── Sync theme from index.html via localStorage ── */
   const saved = localStorage.getItem('pb-theme');
   if (saved) {
     document.body.setAttribute('data-theme', saved);
-    options.forEach(o => {
-      o.classList.toggle('active', o.dataset.themeVal === saved);
-    });
+    options.forEach(o => o.classList.toggle('active', o.dataset.themeVal === saved));
   }
-  options.forEach(btn => {
-    btn.addEventListener('click', () => {
-      localStorage.setItem('pb-theme', btn.dataset.themeVal);
-    });
-  });
 
-  /* ── Filter ── */
+  /* Filter */
   const filterBtns = document.querySelectorAll('.filter-btn');
   const allCards   = document.querySelectorAll('.proj-card');
 
@@ -645,7 +643,7 @@
     });
   });
 
-  /* ── Card tilt ── */
+  /* Card tilt */
   allCards.forEach(card => {
     if (card.dataset.status === 'coming') return;
     card.addEventListener('mousemove', e => {

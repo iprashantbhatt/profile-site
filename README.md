@@ -10,26 +10,23 @@
 
 ---
 
-<img align="right" width="36%" src="https://github-readme-stats.vercel.app/api?username=iprashantbhatt&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=1e7be0&icon_color=0fb4c8&text_color=c9d1d9" />
-
 ### 🫧 About This Project
 
-```yaml
-project: prashantbhatt.net
-type: Personal Profile + Link-in-Bio
-stack: HTML · CSS · Vanilla JS
-design: Apple Liquid Glass / Glassmorphism
-themes: 5 — Arctic · Aurora · Sunset · Forest · Obsidian
-features:
-  - Animated mesh gradient background
-  - Floating avatar with pulse animation
-  - Skill bars with tab switcher
-  - Live music player (Lo-fi / Jazz)
-  - Projects showcase
-  - Journey timeline
-  - Blog section
-live_url: https://prashantbhatt.net
+<img align="right" width="36%" src="https://github-readme-stats.vercel.app/api?username=iprashantbhatt&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=1e7be0&icon_color=0fb4c8&text_color=c9d1d9" />
+
+- 🌐 **Live:** [prashantbhatt.net](https://prashantbhatt.net)
+- 🎨 **Design:** Apple Liquid Glass / Glassmorphism
+- 🛠️ **Stack:** HTML · CSS · Vanilla JS
+- 🎭 **Themes:** Arctic · Aurora · Sunset · Forest · Obsidian
+- 🎵 **Music Player:** Built-in Lo-fi / Jazz
+- 📊 **Skill Bars:** Frontend · Blockchain · AI
+- 🚀 **Projects:** GPT · Bitcoin · XPlorer · Swipely · GlassUI
+- 🗺️ **Timeline:** 2013 Banking → 2025 Building
+- 📱 **Responsive:** Mobile-first design
+- ♿ **Accessible:** ARIA · reduced-motion support
+
 <br clear="right"/>
+
 ---
 
 ### ✨ Features
@@ -66,17 +63,17 @@ live_url: https://prashantbhatt.net
 
 ---
 
-### 🎨 Themes Preview
+### 🎨 Themes
 
 <div align="center">
 
 | Theme | Vibe |
 |-------|------|
 | ❄️ **Arctic White** | Clean · Light · Crisp blue accents |
-| 🌌 **Aurora Dark** | Deep navy · Teal & purple glow |
-| 🌅 **Sunset Blaze** | Dark rose · Orange & pink fire |
+| 🌌 **Aurora Dark** | Deep navy · Teal and purple glow |
+| 🌅 **Sunset Blaze** | Dark rose · Orange and pink fire |
 | 🌿 **Forest Neon** | Deep green · Neon lime accents |
-| 🔮 **Obsidian Violet** | Pure black · Purple & blue shimmer |
+| 🔮 **Obsidian Violet** | Pure black · Purple and blue shimmer |
 
 </div>
 
@@ -105,6 +102,7 @@ live_url: https://prashantbhatt.net
 [![Live Site](https://img.shields.io/badge/🌐_Live_Site-prashantbhatt.net-1e7be0?style=for-the-badge)](https://prashantbhatt.net)
 [![GitHub](https://img.shields.io/badge/GitHub-iprashantbhatt-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/iprashantbhatt)
 [![X](https://img.shields.io/badge/X-iprashantbhatt-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/iprashantbhatt)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-iprashantbhatt-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/iprashantbhatt)
 
 </div>
 
